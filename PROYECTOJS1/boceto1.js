@@ -14,11 +14,11 @@ function Producto(nombre, precio, stock, cat, imagenprod ){ //constructor
 let p1= new Producto("Fallout 4", 25, 31, "Historia")
 let p2 = new Producto("God Of War 4", 10, 10, "Aventura")
 let p3 = new Producto("The Elder Scrolls V: Skyrim", 20, 15, "Fantasia")
-let p4 = new Producto("Assassin's Creed: Odyssey", 20, 7, "Aventura")
-let p5 = new Producto("Assassin's Creed: Odyssey", 20, 0, "Emocionante")
-let p6 = new Producto("Assassin's Creed: Odyssey", 20, 5, "Terror")
-let p7 = new Producto("Assassin's Creed: Odyssey", 20, 0, "Emocionante")
-let p8 = new Producto("Assassin's Creed: Odyssey", 20, 2, "Terror")
+let p4 = new Producto("Assassin's Creed: Odyssey", 5, 0, "Aventura")
+let p5 = new Producto("Minecraft", 8, 11, "Emocionante")
+let p6 = new Producto("Silent Hill ", 10, 3, "Terror")
+let p7 = new Producto("FarCry", 18, 9, "Emocionante")
+let p8 = new Producto("Projecto Zomboid", 12, 2, "Terror")
 
 
 let listaProductos = [p1, p2, p3, p4, p5, p6, p7, p8]
@@ -52,7 +52,7 @@ let categoria = document.getElementById("categoria")
 categoria.addEventListener("change", ()=>{categoriaElegida = categoria.value})
 
 let botonFiltrado = document.getElementById("filtrar")
-botonFiltrado.addEventListener("click", filtrado)
+    botonFiltrado.addEventListener("click", filtrado)
 
 
 function filtrado(){
